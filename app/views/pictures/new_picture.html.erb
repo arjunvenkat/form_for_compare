@@ -1,0 +1,15 @@
+<h2>form_tag</h2>
+
+<%= form_tag(create_pictures_url) do %>
+  <div>
+    <%= label_tag :url %><br />
+    <%= text_field_tag 'nested[url]' %>
+  </div>
+  <div>
+    <%= label_tag :caption %><br />
+    <%= text_field_tag :caption %>
+  </div>
+  <div>
+    <%= submit_tag "Submit" %>
+  </div>
+<% end %>
